@@ -1,8 +1,5 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/";
 
-@import 'bootstrap-sass-official/assets/stylesheets/bootstrap';
-// @import 'sass-bootstrap/lib/theme';
-
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -17,3 +14,11 @@ body {
   padding: 40px 15px;
   text-align: center;
 }
+
+// This imports the bootstrap source
+@import 'base/main';
+
+@import 'common/main';
+
+@import 'views/index';
+@import 'views/signin';

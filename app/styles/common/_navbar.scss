@@ -1,0 +1,38 @@
+.navbar {
+    &.nokSubNavbar {
+        min-height: $nok-subnavbar-height;
+        height: $nok-subnavbar-height;
+        background: $gray-lighter;
+    }
+}
+
+.nav-separator {
+    padding: 20px 0;
+    line-height: 20px;
+    color: $theme_text_on_light;
+}
+
+.navbar-brand {
+    padding-top: 8px;
+}
+
+.navbar-username {
+    padding: 21px 15px 0;
+    color: $theme_white;
+}
+
+.navbar-default .nokSubNavbar-nav {
+    > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: $theme_dark;
+    }
+    .active > a,
+    .active > a:hover,
+    .active > a:focus {
+        border: 1px solid $theme_dark;
+        border-width: 0 1px;
+        background: $theme_white;
+        color: $gray;
+    }
+}

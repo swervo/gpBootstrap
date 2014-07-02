@@ -1,0 +1,36 @@
+body {
+    padding-top: $nok-navbar-height;
+    color: $theme_black;
+    &.Join-body {
+        color: $theme_white;
+    }
+    &.modal-open {
+        overflow: auto;
+    }
+}
+
+@import 'navbar';
+@import 'modal';
+@import 'sidebar';
+
+.nokList-group {
+    &:empty {
+        text-align: center;
+        &::after {
+            display: inline-block;
+            font-size: 1.6em;
+            content: "List is empty";
+            text-align: center;
+            color: $gray-lighter;
+        }
+    }
+}
+
+.nok-panel, .list-group-item {
+    position: relative;
+    .nok-deleteTooltip {
+        position: absolute;
+        top: 13px;
+        right: 15px;
+    }
+}
